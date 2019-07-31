@@ -27,7 +27,7 @@ view(w)
 for i=2:100000
     tic
     b=readAngularVelocity(imu);
-     % New_theta = Old_theta + Delta_Time x (angular_velocity - Stationalr_angular_velocity)
+     % New_theta = Old_theta + Delta_Time x (angular_velocity - Stationary_angular_velocity)
     y1(i)=y1(i-1)+t1*(b(1)-y1c);
     y2(i)=y2(i-1)+t1*(b(2)-y2c);
     y3(i)=y3(i-1)+t1*(b(3)-y3c);
