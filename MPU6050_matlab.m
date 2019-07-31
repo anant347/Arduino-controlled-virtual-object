@@ -40,7 +40,7 @@ for i=2:100000
     r=rx*ry*rz;
     
     axang=rotm2axang(r); %Rotation matrix to axis-angle representation 
-    w.UAV_Transform.rotation = axang
+    w.UAV_Transform.rotation = axang;
     pause(0.025) %increase pause duration if object doesn't move
-    t1=toc
+    t1=toc;
 end
